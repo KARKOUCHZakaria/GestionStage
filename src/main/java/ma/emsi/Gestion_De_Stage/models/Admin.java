@@ -6,7 +6,7 @@ import lombok.*;
 
 @EqualsAndHashCode(callSuper = true)
 @Entity
-@Data
+@Data // ->hadi (mn dik import lombok ) kat3tina l getters o setters ol constructeur ...
 @DiscriminatorValue("ADMIN")
 public class Admin extends User {
    //manba3d
