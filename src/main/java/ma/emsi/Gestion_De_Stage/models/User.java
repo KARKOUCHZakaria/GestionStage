@@ -11,11 +11,12 @@ import java.util.Date;
 @DiscriminatorColumn(name = "TYPE_USER", discriminatorType = DiscriminatorType.STRING)
 public abstract class User {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String nom;
-    private String prenom;
-    private String email;
-    private String telephone;
-    private Date dateCreation;
-    private String motDePasse;
+    protected Long id;
+    protected String nom;
+    protected String prenom;
+    protected String email;
+    protected String telephone;
+    protected Date dateCreation;
+    protected String motDePasse;
+
 }
